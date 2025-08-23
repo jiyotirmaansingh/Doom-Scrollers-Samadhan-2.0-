@@ -1,0 +1,55 @@
+{/*Creating a student marks calculator*/}
+
+Code:
+
+const marks = {
+    maths: 85,
+    science: 92,
+    english: 78,
+    computer: 88
+};
+let total = 0;
+for (let subject in marks) {
+    total += marks[subject];
+}
+
+let average = total / Object.keys(marks).length;
+
+let grade;
+if (average >= 90) {
+    grade = "A+";
+} else if (average >= 80) {
+    grade = "A";
+} else if (average >= 70) {
+    grade = "B";
+} else if (average >= 60) {
+    grade = "C";
+} else if (average >= 50) {
+    grade = "D";
+} else {
+    grade = "F";
+}
+
+console.log("📘 Student Marks Calculator");
+console.log("---------------------------");
+for (let subject in marks) {
+    console.log(`${subject} : ${marks[subject]}`);
+}
+console.log("---------------------------");
+console.log("Total Marks : ", total);
+console.log("Average     : ", average.toFixed(2));
+console.log("Grade       : ", grade);
+
+
+Output:
+
+📘 Student Marks Calculator
+---------------------------
+maths : 85
+science : 92
+english : 78
+computer : 88
+---------------------------
+Total Marks :  343
+Average     :  85.75
+Grade       :  A
