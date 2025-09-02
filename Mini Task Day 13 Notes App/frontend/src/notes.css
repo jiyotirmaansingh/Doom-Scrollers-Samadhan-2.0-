@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Note Form */
+.note-form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.note-form button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note-form button:hover {
+  background: #0056b3;
+}
+
+/* Notes List */
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.note-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.note-card h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.note-card p {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.note-card button {
+  margin-right: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note-card .edit-btn {
+  background: #ffc107;
+  color: #fff;
+}
+
+.note-card .edit-btn:hover {
+  background: #e0a800;
+}
+
+.note-card .delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.note-card .delete-btn:hover {
+  background: #c82333;
+}
