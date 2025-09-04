@@ -1,0 +1,6 @@
+/* Custom styles */
+#map {
+  height: 300px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}

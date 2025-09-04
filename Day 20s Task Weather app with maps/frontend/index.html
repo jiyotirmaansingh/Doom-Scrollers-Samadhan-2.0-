@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App with Maps</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map { height: 300px; border-radius: 0.75rem; }
+  </style>
+</head>
+<body class="bg-slate-100 p-6">
+  <div class="max-w-4xl mx-auto bg-white p-6 rounded-2xl shadow-md">
+    <h1 class="text-2xl font-bold mb-4">Weather App with Maps</h1>
+
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="flex-1">
+        <div id="map"></div>
+        <p class="text-sm text-slate-500 mt-2">Click on the map to pick a location (or allow geolocation).</p>
+      </div>
+      <div class="flex-1">
+        <div class="mb-2 flex justify-end">
+          <label class="text-sm mr-2">Units:</label>
+          <select id="units" class="border rounded p-1">
+            <option value="metric">Metric (°C)</option>
+            <option value="imperial">Imperial (°F)</option>
+          </select>
+        </div>
+        <div id="weather" class="bg-slate-50 p-4 rounded-lg border h-[300px] overflow-y-auto">
+          <p>Select a location to view weather.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
