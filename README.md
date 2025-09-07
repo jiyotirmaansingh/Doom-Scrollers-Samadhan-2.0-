@@ -2,7 +2,7 @@
 
  Team Members:
 - **Arbaaz Arif**(Cpt)
-- **Jiyotirmaan Singh**  
+- **Jiyotirmaan Singh**   
 - **Piyush Billore**
 
 # Presentation Video link- 
