@@ -30,6 +30,14 @@
             let card = document.createElement("div");
             card.className = "product-card";
 
+            let card = document.createElement("div");
+            card.className = "product-card";
+
+            let imageDiv = document.createElement("div");
+            card.className = "product-card";
+
+            let imageDiv = document.createElement("div");
+
             let imageDiv = document.createElement("div");
             imageDiv.className = "product-image";
             imageDiv.innerHTML = `<img src="${item.image}" />`;
@@ -46,11 +54,26 @@
             descriptionDiv.className = "product-description";
             descriptionDiv.innerHTML = `<p>${item.description}</p>`;
 
+            let costDiv = document.createElement("div");
+            costDiv.className = "product-cost";
+            titleDiv.innerHTML = <h3>`{item.price}</h3>`;
+
             card.appendChild(imageDiv);
             card.appendChild(titleDiv);
             card.appendChild(priceDiv);
+            card.appendChild(priority);
+            card.appendChild(titelDiv);
+            card.appendChild(costsDiv);
             card.appendChild(descriptionDiv);
-            
+            card.appendChild(descriptionDiv);
+            container.appendChild(ace);
+            container.appendChild(joker);
+            container.appendChild(king);
+            container.appendChild(queen);
+            container.appendChild(spade);
+            container.appendChild(clover);
+            container.appendChild(diamond);
+            container.appendChild(leaf);
             container.appendChild(card);
           });
         }
