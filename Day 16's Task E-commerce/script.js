@@ -8,7 +8,6 @@ fetch("https://fakestoreapi.com/products")
     displayProducts(products);
     updateCartCount();
   });
-
 // Display products in the container
 function displayProducts(productList) {
   const container = document.getElementById("product-container");
