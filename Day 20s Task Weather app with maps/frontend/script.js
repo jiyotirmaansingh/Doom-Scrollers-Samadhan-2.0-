@@ -16,6 +16,14 @@ function initMap() {
     fetchWeather(e.latlng.lat, e.latlng.lng);
   });
 
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos)=>{
+        const coords = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+        setMarker(coords);
+        map.setView(coords,10);
+        fetchWeather(coords.lat,coords.lng);
+        
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       (pos) => {
@@ -98,3 +106,4 @@ unitsEl.addEventListener("change", () => {
 });
 
 initMap();
+
